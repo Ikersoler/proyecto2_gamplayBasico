@@ -22,6 +22,8 @@ public class destryoutOfBounds : MonoBehaviour
         if (transform.position.z < bottomBound)
         {
             Destroy(gameObject);
+            Debug.Log(message:"GAME OVER");
+            Time.timeScale = 0f;
         }
     }
 }
